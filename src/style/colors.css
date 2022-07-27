@@ -1,0 +1,18 @@
+:root {
+  --color-white: #fff;
+  --color-gray-300: #ececec;
+  --color-gray-500: #777;
+  --color-gray-700: #444;
+  --color-gray-800: #333;
+  --color-red: #fd565f;
+  --color-green: #65c964;
+
+  --color-emotion-5: #ff3a62;
+  --color-emotion-4: #ff552d;
+  --color-emotion-3: #ebc700;
+  --color-emotion-2: #1a7200;
+  --color-emotion-1: #008db3;
+
+  --color-bg: #f6f6f6;
+  --color-border: #e2e2e2;
+}
