@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header > div,
+.title {
+  display: flex;
+}
+
+.title {
+  width: 50%;
+  justify-content: center;
+  flex-shrink: 1;
+  font-size: 26px;
+  color: var(--color-gray-700);
+}
