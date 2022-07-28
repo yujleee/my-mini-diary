@@ -1,5 +1,3 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Poor+Story&display=swap');
-@import './style/colors.css';
-@import './style/font.css';
-@import './style/button.css';
-@import './style/header.css';
+@import './style/common/colors.css';
+@import './style/common/font.css';

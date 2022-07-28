@@ -1,3 +1,6 @@
+import '../style/button.css';
+import '../style/header.css';
+
 const Header = ({ left, titleText, right }) => {
   return (
     <header className="header">

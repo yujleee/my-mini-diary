@@ -1,6 +1,6 @@
 import './App.css';
-import Buttons from './Buttons';
-import Header from './Header';
+import Buttons from './components/Buttons';
+import Header from './components/Header';
 
 function App() {
   return (
