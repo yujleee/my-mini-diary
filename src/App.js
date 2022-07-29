@@ -1,16 +1,22 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import New from './pages/New';
+import Diary from './pages/Diary';
+import Edit from './pages/Edit';
 import './App.css';
-import Buttons from './components/Buttons';
-import Header from './components/Header';
 
 function App() {
   return (
-    <div className="App">
-      <Buttons category={'primary'} text={'오늘의 일기 작성하기'} />
-      <Buttons category={'secondary'} text={'삭제하기'} />
-      <Buttons text={'뒤로가기'} />
-      <Header left={<Buttons text={'<'} />} titleText={'홈'} right={<Buttons text={'>'} />} />
-      <Header titleText={'일기 작성'} left={<Buttons text={'<'} />} />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/new" element={<New />} />
+          <Route path="/diary/:id" element={<Diary />} />
+          <Route path="/edit/:id" element={<Edit />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
