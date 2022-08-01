@@ -1,8 +1,11 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
+import { DataStateContext } from '../App';
 import Buttons from '../components/Buttons';
 import Header from '../components/Header';
+import DiaryList from '../components/DiaryList';
 
 const Home = () => {
+  const diaryList = useContext(DataStateContext);
   const [currentDate, setCurrentDate] = useState(new Date());
   const title = `${currentDate.getFullYear()}년 ${currentDate.getMonth() + 1}월`;
 
@@ -18,6 +21,7 @@ const Home = () => {
         titleText={title}
         right={<Buttons text={'>'} onClick={increaseMonth} />}
       />
+      <DiaryList dataList={diaryList} />
     </div>
   );
 };

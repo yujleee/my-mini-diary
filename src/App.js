@@ -70,7 +70,7 @@ export const DataStateContext = React.createContext();
 export const DispatchContext = React.createContext();
 
 function App() {
-  const [data, dispatch] = useReducer(reducer, []);
+  const [data, dispatch] = useReducer(reducer, dummyData);
 
   const { content_id } = useRef(0);
 
