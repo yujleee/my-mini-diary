@@ -1,8 +1,10 @@
-const DiaryList = ({ dataList }) => {
+import DiaryItem from './DiaryItem';
+
+const DiaryList = ({ diaryList }) => {
   return (
     <div>
-      {dataList.map((it) => (
-        <div key={it.id}>{it.content}</div>
+      {diaryList.map((it) => (
+        <DiaryItem key={it.id} {...it} />
       ))}
     </div>
   );

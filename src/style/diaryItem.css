@@ -1,0 +1,50 @@
+.DiaryItem {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+  cursor: pointer;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.DiaryItem .emotion {
+  font-size: 60px;
+}
+
+.DiaryItem .emotion-1 {
+  color: var(--color-emotion-1);
+}
+
+.DiaryItem .emotion-2 {
+  color: var(--color-emotion-2);
+}
+
+.DiaryItem .emotion-3 {
+  color: var(--color-emotion-3);
+}
+
+.DiaryItem .emotion-4 {
+  color: var(--color-emotion-4);
+}
+
+.DiaryItem .emotion-5 {
+  color: var(--color-emotion-5);
+}
+
+.DiaryItem .emotion-6 {
+  color: var(--color-emotion-6);
+}
+
+.DiaryItem .content-wrap {
+  flex-basis: 1;
+  padding: 0 16px;
+}
+
+.content-wrap .date {
+  font-size: 14px;
+  color: var(--color-gray-400);
+}
+
+.content-wrap .content {
+  font-size: 18px;
+}
