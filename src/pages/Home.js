@@ -21,7 +21,7 @@ const Home = () => {
         titleText={title}
         right={<Buttons text={'>'} onClick={increaseMonth} />}
       />
-      <DiaryList dataList={diaryList} />
+      <DiaryList diaryList={diaryList} />
     </div>
   );
 };
