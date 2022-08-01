@@ -66,6 +66,9 @@ const dummyData = [
   },
 ];
 
+export const DataStateContext = React.createContext();
+export const DispatchContext = React.createContext();
+
 function App() {
   const [data, dispatch] = useReducer(reducer, []);
 
@@ -93,16 +96,20 @@ function App() {
   };
 
   return (
-    <BrowserRouter>
-      <div className="App">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/new" element={<New />} />
-          <Route path="/diary/:id" element={<Diary />} />
-          <Route path="/edit/:id" element={<Edit />} />
-        </Routes>
-      </div>
-    </BrowserRouter>
+    <DataStateContext.Provider value={data}>
+      <DispatchContext.Provider value={(onCreate, onRemove, onEdit)}>
+        <BrowserRouter>
+          <div className="App">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/new" element={<New />} />
+              <Route path="/diary/:id" element={<Diary />} />
+              <Route path="/edit/:id" element={<Edit />} />
+            </Routes>
+          </div>
+        </BrowserRouter>
+      </DispatchContext.Provider>
+    </DataStateContext.Provider>
   );
 }
 
