@@ -2,6 +2,8 @@ import { useState } from 'react';
 import DiaryItem from './DiaryItem';
 import ControlMenu from './ControlMenu';
 
+import '../style/snb.css';
+
 const sortOptionList = [
   { name: '최신순', value: 'latest' },
   { name: '오래된 순', value: 'oldest' },
@@ -44,7 +46,7 @@ const DiaryList = ({ diaryList }) => {
   return (
     <div className="diaryList">
       <div className="snb">
-        <div className="total">📝 지금까지 쓴 일기 {totalDiary}개</div>
+        <div className="total">현재 일기 {totalDiary}개</div>
         <ControlMenu value={sortType} onChange={setSortType} optionList={sortOptionList} />
         <ControlMenu value={filter} onChange={setFilter} optionList={filterOptionList} />
       </div>

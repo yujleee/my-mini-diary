@@ -1,0 +1,23 @@
+.snb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.snb .total {
+  margin-right: auto;
+}
+
+.control-menu {
+  padding: 0 8px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--color-gray-300);
+  margin-right: 10px;
+}
+
+.control-menu:last-child {
+  margin-right: 0;
+}
